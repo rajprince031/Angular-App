@@ -5,8 +5,9 @@
     <img [src]="imageUrl" (click)="onClick()">
   </div>
   <div >
-    <input placeholder="Enter Your Name" [(ngModel)] = "userName">
-    <p>{{this.userName}}</p>
+    <input placeholder="Enter Your Name" [(ngModel)] = "userName" (input) = "nameValidate()">
+    <p *ngIf="userName && !errorMessage">{{this.userName}}</p>
+    <p >{{this.errorMessage}}</p>
   </div>
 </div>
 </div>
