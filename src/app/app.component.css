@@ -2,3 +2,17 @@ img{
     height :100px;
     width:100px
 }
+
+.main_container{
+    height:100vh;
+    display : flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.inner_container{
+    background-color : rgb(255, 170, 0);
+    padding : 100px;
+    
+}

@@ -1,6 +1,14 @@
-
-<div>{{this.title}}</div>
-<div>
-  <img [src]="imageUrl" (click)="onClick()">
+<div class="main_container">
+  <div class="inner_container">
+  <div>{{this.title}}</div>
+  <div>
+    <img [src]="imageUrl" (click)="onClick()">
+  </div>
+  <div >
+    <input placeholder="Enter Your Name" [(ngModel)] = "userName">
+    <p>{{this.userName}}</p>
+  </div>
 </div>
+</div>
+
 <router-outlet />
